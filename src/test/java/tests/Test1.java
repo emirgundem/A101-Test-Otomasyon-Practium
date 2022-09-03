@@ -13,12 +13,24 @@ public class Test1 {
             driver.manage().window().maximize();
 
             WebElement nameElement = driver.findElement(By.id("userName"));
-            WebElement emailElement = driver.findElement(By.id("userEmail"));
             nameElement.click();
-            emailElement.click();
             nameElement.sendKeys("Emir");
+
+            WebElement emailElement = driver.findElement(By.id("userEmail"));
+            emailElement.click();
             emailElement.sendKeys("emirgndem@gmail.com");
 
+            WebElement currentAddress = driver.findElement(By.id("currentAddress"));
+            currentAddress.click();
+            currentAddress.sendKeys("Test DENEME DENEME ");
+
+            WebElement permanentAddress = driver.findElement(By.id("permanentAddress"));
+            permanentAddress.click();
+            permanentAddress.sendKeys("Ankara, Türkiye");
+
+
+            WebElement submitButton = driver.findElement(By.id("submit"));
+            submitButton.click();
 
     }
 }
