@@ -10,16 +10,14 @@ public class Test1 {
             System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.get("https://demoqa.com/text-box");
+            driver.manage().window().maximize();
 
             WebElement nameElement = driver.findElement(By.id("userName"));
             WebElement emailElement = driver.findElement(By.id("userEmail"));
-            WebElement currentAddressElement = driver.findElement(By.id("currentAddress"));
             nameElement.click();
             emailElement.click();
-            currentAddressElement.click();
             nameElement.sendKeys("Emir");
             emailElement.sendKeys("emirgndem@gmail.com");
-            currentAddressElement.sendKeys("Papatya mah çiçek sokak no : 5");
 
 
     }
