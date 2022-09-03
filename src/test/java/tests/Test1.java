@@ -32,5 +32,10 @@ public class Test1 {
             WebElement submitButton = driver.findElement(By.id("submit"));
             submitButton.click();
 
+            WebElement nameText = driver.findElement(By.xpath("//div/p[@id='name']"));
+            String name = nameText.getText();
+            System.out.println(name);
+
+
     }
 }
