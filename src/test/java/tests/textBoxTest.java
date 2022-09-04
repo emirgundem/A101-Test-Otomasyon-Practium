@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Test1 {
+public class textBoxTest {
     public static void main(String[] args) {
             System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
             WebDriver driver = new ChromeDriver();
@@ -28,13 +28,13 @@ public class Test1 {
             permanentAddress.click();
             permanentAddress.sendKeys("Ankara, Türkiye");
 
-
             WebElement submitButton = driver.findElement(By.id("submit"));
             submitButton.click();
 
             WebElement nameText = driver.findElement(By.xpath("//div/p[@id='name']"));
             String name = nameText.getText();
             System.out.println(name);
+
 
 
     }
