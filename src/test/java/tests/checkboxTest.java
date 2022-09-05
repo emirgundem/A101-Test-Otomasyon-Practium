@@ -14,6 +14,10 @@ public class checkboxTest {
         driver.get("https://demoqa.com/checkbox");
         driver.manage().window().maximize();
 
+        String checkboxClassValue = "rct-checkbox";
+        WebElement checkbox = driver.findElement(By.className(checkboxClassValue));
+        checkbox.click();
+
 
 
     }
