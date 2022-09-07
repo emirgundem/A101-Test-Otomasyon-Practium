@@ -16,5 +16,7 @@ public class uploadFileButtonTest {
 
         WebElement uploadButtonElement = driver.findElement(By.id("uploadFile"));
         uploadButtonElement.sendKeys("C:/Users/Lenovo/Desktop/selenium.png");
+
+
     }
 }
