@@ -25,11 +25,14 @@ public class browserWindow {
         System.out.println(tabs.size());
 
 
-        driver.switchTo().window(tabs.get(1));
+        driver.switchTo().window(tabs.get(0));
         System.out.println(driver.getCurrentUrl());
 
         Thread.sleep(2000);
         driver.close();
+
+
+
 
 
 
