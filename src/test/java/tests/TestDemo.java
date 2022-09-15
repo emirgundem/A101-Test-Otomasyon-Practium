@@ -21,18 +21,17 @@ public class TestDemo {
         driver.manage().window().maximize();
         Thread.sleep(2000);
 
+
         WebElement popup = driver.findElement(By.xpath("(//button[normalize-space()='Kabul Et'])[1]"));
         popup.click();
 
-        Actions actions = new Actions(driver);
-        WebElement element =  driver.findElement(By.xpath("(//a[normalize-space()='Giyim & aksesuar'])[1]"));
-        actions.doubleClick(element).perform();
+        //ClothingAccessoriesPageClickTest
+        ClothingAccessoriesPageClickTest clothingAccessoriesPage = new ClothingAccessoriesPageClickTest(driver);
+        clothingAccessoriesPage.clothingAccessoriesClick();
 
-        driver.navigate().to("https://www.a101.com.tr/giyim-aksesuar/");
-        Thread.sleep(2000);
-        driver.navigate().to("https://www.a101.com.tr/giyim-aksesuar/kadin-ic-giyim/");
-        Thread.sleep(1000);
-        driver.navigate().to("https://www.a101.com.tr/giyim-aksesuar/dizalti-corap/");
+        //Navigate Page Test
+        NavigatePageTest navigatePage = new NavigatePageTest(driver);
+        navigatePage.navigatePageTestClick();
 
        //Click Product Test
         ClickProductTestPage clickProductTest = new ClickProductTestPage(driver);
