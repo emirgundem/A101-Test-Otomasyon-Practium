@@ -47,7 +47,7 @@ public class CreateNewAddressTest {
         Thread.sleep(1000);
 
         WebElement adres = driver.findElement(By.name("line"));
-        adres.sendKeys("Bahçelievler cumhuriyet mahallesi no : 2325  istanbul Türkiye ");
+        adres.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1325  istanbul Türkiye ");
 
         WebElement postaKodu = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
         postaKodu.sendKeys("34000");
@@ -63,6 +63,6 @@ public class CreateNewAddressTest {
 
         WebElement kaydetVeDevamEtButton = driver.findElement(By.xpath("//button[normalize-space()='Kaydet ve Devam Et']"));
         kaydetVeDevamEtButton.click();
-        
+
     }
 }

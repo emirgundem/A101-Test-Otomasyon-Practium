@@ -21,9 +21,10 @@ public class TestDemo {
         driver.manage().window().maximize();
         Thread.sleep(2000);
 
+        //Close Popup Page Test
+        ClosePopUpPageTest closePopUpPage = new ClosePopUpPageTest(driver);
+        closePopUpPage.closePopupClick();
 
-        WebElement popup = driver.findElement(By.xpath("(//button[normalize-space()='Kabul Et'])[1]"));
-        popup.click();
 
         //ClothingAccessoriesPageClickTest
         ClothingAccessoriesPageClickTest clothingAccessoriesPage = new ClothingAccessoriesPageClickTest(driver);
