@@ -11,10 +11,9 @@ public class ClothingAccessoriesPageClickTest {
     public ClothingAccessoriesPageClickTest(WebDriver driver){
         this.driver = driver;
     }
-
     public void clothingAccessoriesClick() {
         Actions actions = new Actions(driver);
-        WebElement giyimAksesuarButton =  driver.findElement(By.xpath("(//a[normalize-space()='Giyim & aksesuar'])[1]"));
-        actions.doubleClick(giyimAksesuarButton).perform();
+        WebElement clothingAccessoriesButton =  driver.findElement(By.xpath("(//a[normalize-space()='Giyim & aksesuar'])[1]"));
+        actions.doubleClick(clothingAccessoriesButton).perform();
     }
 }
