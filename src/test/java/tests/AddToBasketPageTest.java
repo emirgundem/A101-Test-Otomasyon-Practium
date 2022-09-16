@@ -11,8 +11,8 @@ public class AddToBasketPageTest {
     }
 
     public void addToBasket() throws InterruptedException {
-        WebElement sepeteEkle = driver.findElement(new By.ByCssSelector(".add-to-basket.button.green.block.with-icon.js-add-basket"));
-        sepeteEkle.click();
+        WebElement addBasketButton = driver.findElement(new By.ByCssSelector(".add-to-basket.button.green.block.with-icon.js-add-basket"));
+        addBasketButton.click();
         Thread.sleep(1000);
     }
 }
