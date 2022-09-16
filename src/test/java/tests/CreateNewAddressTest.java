@@ -15,54 +15,54 @@ public class CreateNewAddressTest {
 
     public void createNewAddress() throws InterruptedException {
 
-        WebElement yeniAdresOlustur = driver.findElement(By.xpath("//body/section/section/div/div/div/div/div/div/div/ul[2]/li[1]/a[1]"));
-        yeniAdresOlustur.click();
+        WebElement createNewAddress = driver.findElement(By.xpath("//body/section/section/div/div/div/div/div/div/div/ul[2]/li[1]/a[1]"));
+        createNewAddress.click();
 
-        WebElement adresBaslıgı = driver.findElement(new By.ByCssSelector("input[placeholder='Ev adresim, iş adresim vb.']"));
-        adresBaslıgı.sendKeys("Ev");
+        WebElement addressTitle = driver.findElement(new By.ByCssSelector("input[placeholder='Ev adresim, iş adresim vb.']"));
+        addressTitle.sendKeys("Ev");
 
         WebElement ad = driver.findElement(new By.ByCssSelector("input[name='first_name']"));
         ad.sendKeys("emir");
 
-        WebElement soyad = driver.findElement(By.xpath("//body/div/div/div/form[@method='post']/div/div[2]/div[1]/label[1]/input[1]"));
-        soyad.sendKeys("gündem");
+        WebElement lastName = driver.findElement(By.xpath("//body/div/div/div/form[@method='post']/div/div[2]/div[1]/label[1]/input[1]"));
+        lastName.sendKeys("gündem");
 
 
-        WebElement cepTelefonu = driver.findElement(By.xpath("(//input[@type='text'])[8]"));
-        cepTelefonu.sendKeys("5355194056");
+        WebElement phoneNumber = driver.findElement(By.xpath("(//input[@type='text'])[8]"));
+        phoneNumber.sendKeys("5355194056");
 
-        Select drpİl = new Select(driver.findElement(By.name("city")));
-        drpİl.selectByVisibleText("İSTANBUL");
-
-        Thread.sleep(1000);
-
-        Select drpİlçe = new Select(driver.findElement(By.name("township")));
-        drpİlçe.selectByVisibleText("BAHÇELİEVLER");
+        Select city = new Select(driver.findElement(By.name("city")));
+        city.selectByVisibleText("İSTANBUL");
 
         Thread.sleep(1000);
 
-        Select drpMahalle = new Select(driver.findElement(By.name("district")));
-        drpMahalle.selectByVisibleText("CUMHURİYET MAH");
+        Select township = new Select(driver.findElement(By.name("township")));
+        township.selectByVisibleText("BAHÇELİEVLER");
 
         Thread.sleep(1000);
 
-        WebElement adres = driver.findElement(By.name("line"));
-        adres.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1325  istanbul Türkiye ");
+        Select district = new Select(driver.findElement(By.name("district")));
+        district.selectByVisibleText("CUMHURİYET MAH");
 
-        WebElement postaKodu = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
-        postaKodu.sendKeys("34000");
+        Thread.sleep(1000);
+
+        WebElement address = driver.findElement(By.name("line"));
+        address.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1325  istanbul Türkiye ");
+
+        WebElement postCode = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
+        postCode.sendKeys("34000");
 
 
-        WebElement kaydet =  driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/button[1]"));
-        kaydet.click();
+        WebElement save =  driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/button[1]"));
+        save.click();
 
         WebElement radioButton = driver.findElement(By.xpath("(//div[@class='radio'])[3]"));
         radioButton.click();
 
         Thread.sleep(1000);
 
-        WebElement kaydetVeDevamEtButton = driver.findElement(By.xpath("//button[normalize-space()='Kaydet ve Devam Et']"));
-        kaydetVeDevamEtButton.click();
+        WebElement saveAndContinueButton = driver.findElement(By.xpath("//button[normalize-space()='Kaydet ve Devam Et']"));
+        saveAndContinueButton.click();
 
     }
 }
