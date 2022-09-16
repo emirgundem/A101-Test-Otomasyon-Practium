@@ -16,7 +16,8 @@ public class ViewBasketPageTest {
     public void viewBasket() throws InterruptedException {
         driver.findElement(new By.ByCssSelector(".go-to-shop")).click();
         Thread.sleep(1000);
-        WebElement sepetiOnayla = driver.findElement(new By.ByCssSelector(".button.green.checkout-button.block.js-checkout-button"));
-        sepetiOnayla.click();
+        WebElement confirmBasket = driver.findElement(new By.ByCssSelector(".button.green.checkout-button.block.js-checkout-button"));
+        confirmBasket.click();
+
     }
 }
