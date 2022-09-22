@@ -13,7 +13,5 @@ public class ContinueWithoutMemberShipButtonTest {
     public void continueWithoutMemberShipButtonTestClick() {
         WebElement continueWithoutMemberShipButton  = driver.findElement(new By.ByCssSelector("a[title='ÜYE OLMADAN DEVAM ET']"));
         continueWithoutMemberShipButton.click();
-
     }
-
 }

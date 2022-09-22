@@ -47,11 +47,10 @@ public class CreateNewAddressTest {
         Thread.sleep(1000);
 
         WebElement address = driver.findElement(By.name("line"));
-        address.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1325  istanbul Türkiye ");
+        address.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1100 istanbul Türkiye ");
 
-        WebElement postCode = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
-        postCode.sendKeys("34000");
-
+        //WebElement postCode = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
+        //postCode.sendKeys("34000");
 
         WebElement save =  driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/button[1]"));
         save.click();

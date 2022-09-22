@@ -14,6 +14,7 @@ public class PaymentPageTest {
     public PaymentPageTest(WebDriver driver) {
         this.driver = driver;
     }
+
     public void paymentTestCheck() {
         WebElement creditCardCostumerName = driver.findElement(new By.ByCssSelector("div[class='form-area js-new-creditcard-area'] input[name='name']"));
         creditCardCostumerName.sendKeys("Emircan Gündem");
@@ -31,7 +32,6 @@ public class PaymentPageTest {
 
         WebElement cardCvc = driver.findElement(new By.ByCssSelector("div[class='form-area js-new-creditcard-area'] input[name='card_cvv']"));
         cardCvc.sendKeys("520");
-
 
         //Ön Bilgilendirme ve Uzaktan satış sözleşmesi
 

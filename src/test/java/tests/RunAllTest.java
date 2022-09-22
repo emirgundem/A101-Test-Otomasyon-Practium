@@ -54,21 +54,15 @@ public class RunAllTest {
         CreateNewAddressTest createNewAddressTest = new CreateNewAddressTest(driver);
         createNewAddressTest.createNewAddress();
 
-        //PaymentPage Point
+        /*
         PaymentPageTest paymentTest = new PaymentPageTest(driver);
         paymentTest.paymentTestCheck();
+        */
 
 
-
-
-
-
-
-
-
-
-
-
+        //Garanti Pay
+        GarantiPayPaymentTest garantiPayPayment = new GarantiPayPaymentTest(driver);
+        garantiPayPayment.garantiPayTestCheck();
 
 
     }
