@@ -1,4 +1,4 @@
-package tests;
+package tests.navigate;
 
 import org.openqa.selenium.WebDriver;
 

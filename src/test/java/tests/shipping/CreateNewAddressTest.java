@@ -1,4 +1,4 @@
-package tests;
+package tests.shipping;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

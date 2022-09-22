@@ -7,7 +7,12 @@ import tests.basketOption.AddToBasketPageTest;
 import tests.basketOption.ViewBasketPageTest;
 import tests.membership.ContinueWithoutMemberShipButtonTest;
 import tests.membership.WithoutMemberShipPageTest;
+import tests.navigate.ClickProductTestPage;
+import tests.navigate.ClosePopUpPageTest;
+import tests.navigate.ClothingAccessoriesPageClickTest;
+import tests.navigate.NavigatePageTest;
 import tests.payment.PaymentPageTest;
+import tests.shipping.CreateNewAddressTest;
 
 import java.util.concurrent.TimeUnit;
 
