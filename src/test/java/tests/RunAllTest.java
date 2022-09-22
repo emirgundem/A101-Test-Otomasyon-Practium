@@ -3,6 +3,7 @@ package tests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import tests.payment.PaymentPageTest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -54,22 +55,23 @@ public class RunAllTest {
         CreateNewAddressTest createNewAddressTest = new CreateNewAddressTest(driver);
         createNewAddressTest.createNewAddress();
 
-        /*
+
+        //Payment Page
         PaymentPageTest paymentTest = new PaymentPageTest(driver);
         paymentTest.paymentTestCheck();
-        */
+
+        /*
+        Garanti Pay
+        GarantiPayPaymentTest garantiPayPayment = new GarantiPayPaymentTest(driver);
+        garantiPayPayment.garantiPayTestCheck();
+         */
 
 
         /*
-        GarantiPayPaymentTest garantiPayPayment = new GarantiPayPaymentTest(driver);
-        garantiPayPayment.garantiPayTestCheck();
-
-         */
-
-        //BkmExpress
+        BkmExpress
         BkmExpressPaymentTest bkmExpressPayment = new BkmExpressPaymentTest(driver);
         bkmExpressPayment.bkmExpressPaymentTestCheck();
-
+         */
     }
 }
 

@@ -47,7 +47,7 @@ public class CreateNewAddressTest {
         Thread.sleep(1000);
 
         WebElement address = driver.findElement(By.name("line"));
-        address.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1200 istanbul Türkiye ");
+        address.sendKeys("Bahçelievler cumhuriyet mahallesi no : 1400 istanbul Türkiye ");
 
         //WebElement postCode = driver.findElement(By.xpath("(//input[@type='text'])[10]"));
         //postCode.sendKeys("34000");
