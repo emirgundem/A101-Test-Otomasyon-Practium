@@ -3,6 +3,8 @@ package tests;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import tests.basketOption.AddToBasketPageTest;
+import tests.basketOption.ViewBasketPageTest;
 import tests.payment.PaymentPageTest;
 
 import java.util.concurrent.TimeUnit;

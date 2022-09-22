@@ -1,4 +1,4 @@
-package tests;
+package tests.basketOption;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
