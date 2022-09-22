@@ -60,10 +60,15 @@ public class RunAllTest {
         */
 
 
-        //Garanti Pay
+        /*
         GarantiPayPaymentTest garantiPayPayment = new GarantiPayPaymentTest(driver);
         garantiPayPayment.garantiPayTestCheck();
 
+         */
+
+        //BkmExpress
+        BkmExpressPaymentTest bkmExpressPayment = new BkmExpressPaymentTest(driver);
+        bkmExpressPayment.bkmExpressPaymentTestCheck();
 
     }
 }
